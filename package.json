@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -- --debug --debug-webpack --loglevel silly"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -45,5 +45,6 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  }
+  },
+  "packageManager": "yarn@4.5.0"
 }
